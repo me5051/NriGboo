@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Full Menu — NRI GBOO</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Cinzel:wght@400;600;700&family=Lora:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="nri.css"/>
+  <link rel="stylesheet" href="menu.css"/>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="menu-page-header">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="menu-page-logo">NRI GBOO</div>
+    <div class="header-divider"></div>
+    <h1 class="menu-page-title">Our Full Menu</h1>
+    <p class="menu-page-sub">Authentic Igbo flavours, crafted with pride</p>
+  </div>
+
+  <!-- CATEGORY BUTTONS -->
+  <div class="tabs-wrapper">
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab('grill', this)">
+        <span class="tab-icon">🔥</span> On the Grill
+      </button>
+      <button class="tab-btn" onclick="switchTab('soups', this)">
+        <span class="tab-icon">🍲</span> Soups & Swallow
+      </button>
+      <button class="tab-btn" onclick="switchTab('pots', this)">
+        <span class="tab-icon">🍛</span> Pots & Plates
+      </button>
+      <button class="tab-btn" onclick="switchTab('proteins', this)">
+        <span class="tab-icon">🍖</span> Just Proteins
+      </button>
+      <button class="tab-btn" onclick="switchTab('drinks', this)">
+        <span class="tab-icon">🥤</span> Drinks
+      </button>
+      <button class="tab-btn" onclick="switchTab('specials', this)">
+        <span class="tab-icon">⭐</span> Specials
+      </button>
+      <button class="tab-btn" onclick="switchTab('today', this)">
+        <span class="tab-icon">📅</span> Available Today
+      </button>
+    </div>
+  </div>
+
+  <!-- ON THE GRILL -->
+  <div class="tab-panel active" id="panel-grill">
+    <div class="panel-heading">
+      <div class="panel-title"><span>🔥 Oku na-ere</span>On the Grill</div>
+      <p class="panel-note">Charcoal-grilled to order</p>
+    </div>
+    <div class="items-grid">
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Grilled Catfish (Azu Ọkpụkpụ)</span><span class="item-price">₦4,500</span></div>
+        <p class="item-desc">Whole catfish seasoned with native spices, grilled over open charcoal</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Suya Beef Skewers</span><span class="item-price">₦3,200</span></div>
+        <p class="item-desc">Thin-cut beef rubbed with yaji spice blend, grilled on skewers</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Grilled Chicken (Okirikiri)</span><span class="item-price">₦3,800</span></div>
+        <p class="item-desc">Half chicken marinated in uziza and pepper blend, slow grilled</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Oporo Anọ (Grilled Snail)</span><span class="item-price">₦3,800</span></div>
+        <p class="item-desc">Giant African snails grilled with uziza leaf dipping sauce</p>
+        <span class="item-tag">Native Special</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Grilled Goat Ribs</span><span class="item-price">₦5,500</span></div>
+        <p class="item-desc">Slow-grilled goat ribs with utazi and pepper dip</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Corn & Ube (Oka na Ube)</span><span class="item-price">₦1,200</span></div>
+        <p class="item-desc">Grilled corn served with fresh African pear — a true street classic</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SOUPS & SWALLOW -->
+  <div class="tab-panel" id="panel-soups">
+    <div class="panel-heading">
+      <div class="panel-title"><span>🍲 Ofe na Nri</span>Soups & Swallow</div>
+      <p class="panel-note">All soups served with your choice of swallow</p>
+    </div>
+    <div class="items-grid">
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Ofe Onugbu</span><span class="item-price">₦3,500</span></div>
+        <p class="item-desc">Bitter leaf soup with assorted meats and stockfish</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Ofe Oha</span><span class="item-price">₦3,800</span></div>
+        <p class="item-desc">Ora leaf soup thickened with cocoyam, rich and earthy</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Ofe Nsala (White Soup)</span><span class="item-price">₦4,200</span></div>
+        <p class="item-desc">Light catfish soup with utazi leaf — no palm oil</p>
+        <span class="item-tag">Native Special</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Ofe Akwu (Palm Nut Soup)</span><span class="item-price">₦3,500</span></div>
+        <p class="item-desc">Rich palm nut base with assorted proteins and uziza leaf</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Egusi Soup</span><span class="item-price">₦3,200</span></div>
+        <p class="item-desc">Ground melon seed soup with ugu leaf and smoked fish</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Ogbono Soup</span><span class="item-price">₦3,200</span></div>
+        <p class="item-desc">Draw soup with bush mango seed, perfect with any swallow</p>
+      </div>
+    </div>
+    <div style="margin-top: 3rem;">
+      <p class="section-label" style="margin-bottom: 1rem;">Choose your swallow</p>
+      <div class="items-grid">
+        <div class="menu-item"><div class="item-top"><span class="item-name">Ede Ofe (Pounded Cocoyam)</span><span class="item-price">₦1,200</span></div></div>
+        <div class="menu-item"><div class="item-top"><span class="item-name">Akpu / Fufu</span><span class="item-price">₦900</span></div></div>
+        <div class="menu-item"><div class="item-top"><span class="item-name">Pounded Yam (Ji Ọtụtụ)</span><span class="item-price">₦1,000</span></div></div>
+        <div class="menu-item"><div class="item-top"><span class="item-name">Garri (Eba)</span><span class="item-price">₦700</span></div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POTS & PLATES -->
+  <div class="tab-panel" id="panel-pots">
+    <div class="panel-heading">
+      <div class="panel-title"><span>🍛 Nri na Efere</span>Pots & Plates</div>
+      <p class="panel-note">Rice, stew, porridge & plated dishes</p>
+    </div>
+    <div class="items-grid">
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Native Ofada Rice & Stew</span><span class="item-price">₦3,500</span></div>
+        <p class="item-desc">Local Ofada rice served with rich ayamase (green pepper) stew</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Jollof Rice (Igbo Style)</span><span class="item-price">₦2,800</span></div>
+        <p class="item-desc">Party-style jollof with smoky bottom, cooked in native pot</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Jiọ Ede (Yam & Cocoyam Pottage)</span><span class="item-price">₦2,000</span></div>
+        <p class="item-desc">Soft yam and cocoyam cooked in palm oil with uziza</p>
+        <span class="item-tag">Native Special</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Fried Yam & Pepper Sauce</span><span class="item-price">₦1,800</span></div>
+        <p class="item-desc">Crispy fried yam served with spiced native pepper sauce</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Ukwa (Breadfruit Pottage)</span><span class="item-price">₦3,200</span></div>
+        <p class="item-desc">Slow-cooked breadfruit with smoked fish and palm oil</p>
+        <span class="item-tag">Native Special</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Abacha (African Salad)</span><span class="item-price">₦2,500</span></div>
+        <p class="item-desc">Shredded cassava with garden egg, ugba, and native spices</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- JUST PROTEINS -->
+  <div class="tab-panel" id="panel-proteins">
+    <div class="panel-heading">
+      <div class="panel-title"><span>🍖 Anụ na Azụ</span>Just Proteins</div>
+      <p class="panel-note">Add-ons or standalone orders</p>
+    </div>
+    <div class="items-grid">
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Nkwobi</span><span class="item-price">₦4,500</span></div>
+        <p class="item-desc">Spiced cow foot in native palm oil sauce with utazi leaf</p>
+        <span class="item-tag">Bestseller</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Isi Ewu</span><span class="item-price">₦5,000</span></div>
+        <p class="item-desc">Seasoned goat head — a timeless Igbo delicacy</p>
+        <span class="item-tag">Native Special</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Assorted Meat (Anụ Icheku)</span><span class="item-price">₦2,500</span></div>
+        <p class="item-desc">Cow skin (kanda), tripe, and beef in pepper sauce</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Smoked Catfish</span><span class="item-price">₦2,800</span></div>
+        <p class="item-desc">Whole smoked catfish — great as a side or soup addition</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Peppered Gizzard</span><span class="item-price">₦2,200</span></div>
+        <p class="item-desc">Tender gizzard in a spicy native pepper base</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Stockfish (Okporoko)</span><span class="item-price">₦1,500</span></div>
+        <p class="item-desc">Traditional dried cod — perfect companion for any soup</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- DRINKS -->
+  <div class="tab-panel" id="panel-drinks">
+    <div class="panel-heading">
+      <div class="panel-title"><span>🥤 Mmiri na Mmanya</span>Drinks</div>
+      <p class="panel-note">Native & refreshing</p>
+    </div>
+    <div class="items-grid">
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Mmanya Ocha (Palm Wine)</span><span class="item-price">₦800</span></div>
+        <p class="item-desc">Fresh-tapped palm wine — sweet and lightly fermented</p>
+        <span class="item-tag">Native</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Zobo Special</span><span class="item-price">₦700</span></div>
+        <p class="item-desc">Hibiscus drink steeped with ginger, clove, and pineapple</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Kunu Aya</span><span class="item-price">₦600</span></div>
+        <p class="item-desc">Tiger nut drink — creamy, naturally sweet, and dairy-free</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Fresh Coconut Water</span><span class="item-price">₦500</span></div>
+        <p class="item-desc">Natural and chilled straight from the coconut</p>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Pepper Soup Broth</span><span class="item-price">₦1,000</span></div>
+        <p class="item-desc">Spiced native broth — warming and deeply aromatic</p>
+        <span class="item-tag">Native</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Bottled Water / Soft Drinks</span><span class="item-price">₦300</span></div>
+        <p class="item-desc">Chilled water, Coca-Cola, Fanta, Sprite</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SPECIALS -->
+  <div class="tab-panel" id="panel-specials">
+    <div class="panel-heading">
+      <div class="panel-title"><span>⭐ Ihe Pụrụ Iche</span>Specials</div>
+      <p class="panel-note">Chef's curated selections</p>
+    </div>
+    <div class="items-grid">
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Sunday Ofe Oha Feast</span><span class="item-price">₦6,500</span></div>
+        <p class="item-desc">Full Igbo Sunday experience — Ofe Oha, pounded cocoyam, assorted meat & palm wine</p>
+        <span class="item-tag">Sunday Only</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Isi Ewu Night</span><span class="item-price">₦5,500</span></div>
+        <p class="item-desc">Friday special — freshest goat head with palm wine and palm kernel oil sauce</p>
+        <span class="item-tag">Friday Only</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">NRI GBOO Platter</span><span class="item-price">₦12,000</span></div>
+        <p class="item-desc">Chef's selection of five native dishes — designed to share</p>
+        <span class="item-tag">For 2–4 people</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Igbo Breakfast Special</span><span class="item-price">₦2,800</span></div>
+        <p class="item-desc">Akara, ogi, fried plantain and smoked fish — mornings done right</p>
+        <span class="item-tag">Morning Only</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Ukwa & Palm Wine Combo</span><span class="item-price">₦3,800</span></div>
+        <p class="item-desc">Breadfruit pottage paired with a cold cup of fresh palm wine</p>
+        <span class="item-tag">Native Pairing</span>
+      </div>
+      <div class="menu-item">
+        <div class="item-top"><span class="item-name">Group Feast (10+ people)</span><span class="item-price">On Request</span></div>
+        <p class="item-desc">Custom menu for large groups — call ahead to plan your feast</p>
+        <span class="item-tag">Pre-order</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- AVAILABLE TODAY -->
+  <div class="tab-panel" id="panel-today">
+    <div class="panel-heading">
+      <div class="panel-title"><span>📅 Nri Ụbọchị Taa</span>Available Today</div>
+    </div>
+    <div class="available-banner">
+      <div class="dot"></div>
+      <p>Updated daily. Call to confirm: <strong>+234 803 000 0000</strong></p>
+    </div>
+    <div class="available-list">
+      <div class="available-item">
+        <div class="available-item-info">
+          <div class="available-item-name">Ofe Oha + Pounded Cocoyam</div>
+          <div class="available-item-desc">Freshly prepared this morning</div>
+        </div>
+        <span class="item-price">₦5,000</span>
+      </div>
+      <div class="available-item">
+        <div class="available-item-info">
+          <div class="available-item-name">Grilled Catfish</div>
+          <div class="available-item-desc">Available until sold out</div>
+        </div>
+        <span class="item-price">₦4,500</span>
+      </div>
+      <div class="available-item">
+        <div class="available-item-info">
+          <div class="available-item-name">Abacha (African Salad)</div>
+          <div class="available-item-desc">Ready now</div>
+        </div>
+        <span class="item-price">₦2,500</span>
+      </div>
+      <div class="available-item">
+        <div class="available-item-info">
+          <div class="available-item-name">Nkwobi</div>
+          <div class="available-item-desc">Evening serving from 5pm</div>
+        </div>
+        <span class="item-price">₦4,500</span>
+      </div>
+      <div class="available-item">
+        <div class="available-item-info">
+          <div class="available-item-name">Palm Wine (Mmanya Ocha)</div>
+          <div class="available-item-desc">Freshly tapped today</div>
+        </div>
+        <span class="item-price">₦800</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="menu-page-footer">
+    <p>All prices in Nigerian Naira (₦) and subject to change. &nbsp;|&nbsp; <a href="index.html">← Back to NRI GBOO</a></p>
+  </div>
+
+  <script src="menu.js"></script>
+</body>
+</html>
